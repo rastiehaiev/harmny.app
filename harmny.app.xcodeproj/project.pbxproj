@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		452003CE2B40BFCD00C10911 /* GoogleSignInAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003CD2B40BFCD00C10911 /* GoogleSignInAuthenticator.swift */; };
+		452003D02B40C00100C10911 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003CF2B40C00100C10911 /* AuthenticationViewModel.swift */; };
+		452003D22B40C05600C10911 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003D12B40C05600C10911 /* SignInView.swift */; };
+		452003D42B40C14C00C10911 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003D32B40C14C00C10911 /* UserProfileView.swift */; };
+		452003D62B40C18B00C10911 /* UserProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003D52B40C18B00C10911 /* UserProfileImageView.swift */; };
+		452003D82B40C20700C10911 /* UserProfileImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003D72B40C20700C10911 /* UserProfileImageLoader.swift */; };
+		452003E42B42183100C10911 /* UIApplicationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003E32B42183100C10911 /* UIApplicationExt.swift */; };
+		452003E92B4302F600C10911 /* ApiTokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003E82B4302F600C10911 /* ApiTokenData.swift */; };
+		45E507122B40BA1C00B79F60 /* harmny_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E507112B40BA1C00B79F60 /* harmny_appApp.swift */; };
+		45E507142B40BA1C00B79F60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E507132B40BA1C00B79F60 /* ContentView.swift */; };
+		45E507162B40BA1F00B79F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E507152B40BA1F00B79F60 /* Assets.xcassets */; };
+		45E507192B40BA1F00B79F60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E507182B40BA1F00B79F60 /* Preview Assets.xcassets */; };
+		45E5071F2B40BA1F00B79F60 /* harmny.app Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 45E5071E2B40BA1F00B79F60 /* harmny.app Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		45E507242B40BA1F00B79F60 /* harmny_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E507232B40BA1F00B79F60 /* harmny_appApp.swift */; };
+		45E507262B40BA1F00B79F60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E507252B40BA1F00B79F60 /* ContentView.swift */; };
+		45E507282B40BA2100B79F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E507272B40BA2100B79F60 /* Assets.xcassets */; };
+		45E5072B2B40BA2100B79F60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E5072A2B40BA2100B79F60 /* Preview Assets.xcassets */; };
+		49FA430788F41897E2CC5302 /* Pods_harmny_app_Watch_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8881C291CBBEA42E08A9F9E1 /* Pods_harmny_app_Watch_App.framework */; };
+		DEB99F52D1766438CA00F61E /* Pods_harmny_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1286871AA2AC3606960152CC /* Pods_harmny_app.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45E507202B40BA1F00B79F60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45E507062B40BA1C00B79F60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45E5071D2B40BA1F00B79F60;
+			remoteInfo = "harmny.app Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45E507312B40BA2100B79F60 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				45E5071F2B40BA1F00B79F60 /* harmny.app Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1286871AA2AC3606960152CC /* Pods_harmny_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_harmny_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B234B52C72C0AA34A1BC65 /* Pods-harmny.app Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-harmny.app Watch App.release.xcconfig"; path = "Target Support Files/Pods-harmny.app Watch App/Pods-harmny.app Watch App.release.xcconfig"; sourceTree = "<group>"; };
+		452003CD2B40BFCD00C10911 /* GoogleSignInAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInAuthenticator.swift; sourceTree = "<group>"; };
+		452003CF2B40C00100C10911 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		452003D12B40C05600C10911 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		452003D32B40C14C00C10911 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		452003D52B40C18B00C10911 /* UserProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileImageView.swift; sourceTree = "<group>"; };
+		452003D72B40C20700C10911 /* UserProfileImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileImageLoader.swift; sourceTree = "<group>"; };
+		452003E32B42183100C10911 /* UIApplicationExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExt.swift; sourceTree = "<group>"; };
+		452003E82B4302F600C10911 /* ApiTokenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTokenData.swift; sourceTree = "<group>"; };
+		45E5070E2B40BA1C00B79F60 /* harmny.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = harmny.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E507112B40BA1C00B79F60 /* harmny_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = harmny_appApp.swift; sourceTree = "<group>"; };
+		45E507132B40BA1C00B79F60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45E507152B40BA1F00B79F60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45E507182B40BA1F00B79F60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45E5071E2B40BA1F00B79F60 /* harmny.app Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "harmny.app Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E507232B40BA1F00B79F60 /* harmny_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = harmny_appApp.swift; sourceTree = "<group>"; };
+		45E507252B40BA1F00B79F60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45E507272B40BA2100B79F60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45E5072A2B40BA2100B79F60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D97AB8DC16E1AA4B0DA8771 /* Pods-harmny.app Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-harmny.app Watch App.debug.xcconfig"; path = "Target Support Files/Pods-harmny.app Watch App/Pods-harmny.app Watch App.debug.xcconfig"; sourceTree = "<group>"; };
+		720A410131F102A78D2C0A7F /* Pods-harmny.app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-harmny.app.release.xcconfig"; path = "Target Support Files/Pods-harmny.app/Pods-harmny.app.release.xcconfig"; sourceTree = "<group>"; };
+		8881C291CBBEA42E08A9F9E1 /* Pods_harmny_app_Watch_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_harmny_app_Watch_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D06F87A9A66066AD88B86E /* Pods-harmny.app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-harmny.app.debug.xcconfig"; path = "Target Support Files/Pods-harmny.app/Pods-harmny.app.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45E5070B2B40BA1C00B79F60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB99F52D1766438CA00F61E /* Pods_harmny_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E5071B2B40BA1F00B79F60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FA430788F41897E2CC5302 /* Pods_harmny_app_Watch_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		123A99360B09CD43028B518D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3D06F87A9A66066AD88B86E /* Pods-harmny.app.debug.xcconfig */,
+				720A410131F102A78D2C0A7F /* Pods-harmny.app.release.xcconfig */,
+				4D97AB8DC16E1AA4B0DA8771 /* Pods-harmny.app Watch App.debug.xcconfig */,
+				31B234B52C72C0AA34A1BC65 /* Pods-harmny.app Watch App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		452003CA2B40BF7F00C10911 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45E507132B40BA1C00B79F60 /* ContentView.swift */,
+				452003D12B40C05600C10911 /* SignInView.swift */,
+				452003D32B40C14C00C10911 /* UserProfileView.swift */,
+				452003D52B40C18B00C10911 /* UserProfileImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		452003CB2B40BF8A00C10911 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				452003CD2B40BFCD00C10911 /* GoogleSignInAuthenticator.swift */,
+				452003D72B40C20700C10911 /* UserProfileImageLoader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		452003CC2B40BF9300C10911 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				452003CF2B40C00100C10911 /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		452003DB2B40C3C800C10911 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				452003E82B4302F600C10911 /* ApiTokenData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		452003E22B42182000C10911 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				452003E32B42183100C10911 /* UIApplicationExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		45E507052B40BA1C00B79F60 = {
+			isa = PBXGroup;
+			children = (
+				45E507102B40BA1C00B79F60 /* harmny.app */,
+				45E507222B40BA1F00B79F60 /* harmny.app Watch App */,
+				45E5070F2B40BA1C00B79F60 /* Products */,
+				123A99360B09CD43028B518D /* Pods */,
+				C9F26B32A4F63EDC6047F55A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45E5070F2B40BA1C00B79F60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45E5070E2B40BA1C00B79F60 /* harmny.app.app */,
+				45E5071E2B40BA1F00B79F60 /* harmny.app Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45E507102B40BA1C00B79F60 /* harmny.app */ = {
+			isa = PBXGroup;
+			children = (
+				452003E22B42182000C10911 /* Extensions */,
+				452003DB2B40C3C800C10911 /* Models */,
+				452003CB2B40BF8A00C10911 /* Services */,
+				452003CA2B40BF7F00C10911 /* Views */,
+				452003CC2B40BF9300C10911 /* ViewModels */,
+				45E507112B40BA1C00B79F60 /* harmny_appApp.swift */,
+				45E507152B40BA1F00B79F60 /* Assets.xcassets */,
+				45E507172B40BA1F00B79F60 /* Preview Content */,
+			);
+			path = harmny.app;
+			sourceTree = "<group>";
+		};
+		45E507172B40BA1F00B79F60 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				45E507182B40BA1F00B79F60 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45E507222B40BA1F00B79F60 /* harmny.app Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				45E507232B40BA1F00B79F60 /* harmny_appApp.swift */,
+				45E507252B40BA1F00B79F60 /* ContentView.swift */,
+				45E507272B40BA2100B79F60 /* Assets.xcassets */,
+				45E507292B40BA2100B79F60 /* Preview Content */,
+			);
+			path = "harmny.app Watch App";
+			sourceTree = "<group>";
+		};
+		45E507292B40BA2100B79F60 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				45E5072A2B40BA2100B79F60 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9F26B32A4F63EDC6047F55A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1286871AA2AC3606960152CC /* Pods_harmny_app.framework */,
+				8881C291CBBEA42E08A9F9E1 /* Pods_harmny_app_Watch_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45E5070D2B40BA1C00B79F60 /* harmny.app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45E507322B40BA2100B79F60 /* Build configuration list for PBXNativeTarget "harmny.app" */;
+			buildPhases = (
+				A4C48548610CA7CB02CACB17 /* [CP] Check Pods Manifest.lock */,
+				45E5070A2B40BA1C00B79F60 /* Sources */,
+				45E5070B2B40BA1C00B79F60 /* Frameworks */,
+				45E5070C2B40BA1C00B79F60 /* Resources */,
+				45E507312B40BA2100B79F60 /* Embed Watch Content */,
+				D102AB8779F19B65F48C3F5B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45E507212B40BA1F00B79F60 /* PBXTargetDependency */,
+			);
+			name = harmny.app;
+			productName = harmny.app;
+			productReference = 45E5070E2B40BA1C00B79F60 /* harmny.app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45E5071D2B40BA1F00B79F60 /* harmny.app Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45E5072E2B40BA2100B79F60 /* Build configuration list for PBXNativeTarget "harmny.app Watch App" */;
+			buildPhases = (
+				270EE136B07404258674FAE7 /* [CP] Check Pods Manifest.lock */,
+				45E5071A2B40BA1F00B79F60 /* Sources */,
+				45E5071B2B40BA1F00B79F60 /* Frameworks */,
+				45E5071C2B40BA1F00B79F60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "harmny.app Watch App";
+			productName = "harmny.app Watch App";
+			productReference = 45E5071E2B40BA1F00B79F60 /* harmny.app Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45E507062B40BA1C00B79F60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					45E5070D2B40BA1C00B79F60 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					45E5071D2B40BA1F00B79F60 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 45E507092B40BA1C00B79F60 /* Build configuration list for PBXProject "harmny.app" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45E507052B40BA1C00B79F60;
+			productRefGroup = 45E5070F2B40BA1C00B79F60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45E5070D2B40BA1C00B79F60 /* harmny.app */,
+				45E5071D2B40BA1F00B79F60 /* harmny.app Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45E5070C2B40BA1C00B79F60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E507192B40BA1F00B79F60 /* Preview Assets.xcassets in Resources */,
+				45E507162B40BA1F00B79F60 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E5071C2B40BA1F00B79F60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E5072B2B40BA2100B79F60 /* Preview Assets.xcassets in Resources */,
+				45E507282B40BA2100B79F60 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		270EE136B07404258674FAE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-harmny.app Watch App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C48548610CA7CB02CACB17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-harmny.app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D102AB8779F19B65F48C3F5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-harmny.app/Pods-harmny.app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-harmny.app/Pods-harmny.app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-harmny.app/Pods-harmny.app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45E5070A2B40BA1C00B79F60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				452003D62B40C18B00C10911 /* UserProfileImageView.swift in Sources */,
+				452003D82B40C20700C10911 /* UserProfileImageLoader.swift in Sources */,
+				452003D02B40C00100C10911 /* AuthenticationViewModel.swift in Sources */,
+				452003E42B42183100C10911 /* UIApplicationExt.swift in Sources */,
+				452003D42B40C14C00C10911 /* UserProfileView.swift in Sources */,
+				452003E92B4302F600C10911 /* ApiTokenData.swift in Sources */,
+				45E507142B40BA1C00B79F60 /* ContentView.swift in Sources */,
+				452003CE2B40BFCD00C10911 /* GoogleSignInAuthenticator.swift in Sources */,
+				45E507122B40BA1C00B79F60 /* harmny_appApp.swift in Sources */,
+				452003D22B40C05600C10911 /* SignInView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E5071A2B40BA1F00B79F60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E507262B40BA1F00B79F60 /* ContentView.swift in Sources */,
+				45E507242B40BA1F00B79F60 /* harmny_appApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45E507212B40BA1F00B79F60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45E5071D2B40BA1F00B79F60 /* harmny.app Watch App */;
+			targetProxy = 45E507202B40BA1F00B79F60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		45E5072C2B40BA2100B79F60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45E5072D2B40BA2100B79F60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		45E5072F2B40BA2100B79F60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D97AB8DC16E1AA4B0DA8771 /* Pods-harmny.app Watch App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"harmny.app Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = M8Z87BMBG9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = harmny.app;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "harmny.io.harmny-app";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "harmny.io.harmny-app.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		45E507302B40BA2100B79F60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B234B52C72C0AA34A1BC65 /* Pods-harmny.app Watch App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"harmny.app Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = M8Z87BMBG9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = harmny.app;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "harmny.io.harmny-app";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "harmny.io.harmny-app.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		45E507332B40BA2100B79F60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3D06F87A9A66066AD88B86E /* Pods-harmny.app.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"harmny.app/Preview Content\"";
+				DEVELOPMENT_TEAM = M8Z87BMBG9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "harmny-app-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = harmny.app;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "harmny.io.harmny-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		45E507342B40BA2100B79F60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720A410131F102A78D2C0A7F /* Pods-harmny.app.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"harmny.app/Preview Content\"";
+				DEVELOPMENT_TEAM = M8Z87BMBG9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "harmny-app-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = harmny.app;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "harmny.io.harmny-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45E507092B40BA1C00B79F60 /* Build configuration list for PBXProject "harmny.app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E5072C2B40BA2100B79F60 /* Debug */,
+				45E5072D2B40BA2100B79F60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45E5072E2B40BA2100B79F60 /* Build configuration list for PBXNativeTarget "harmny.app Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E5072F2B40BA2100B79F60 /* Debug */,
+				45E507302B40BA2100B79F60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45E507322B40BA2100B79F60 /* Build configuration list for PBXNativeTarget "harmny.app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E507332B40BA2100B79F60 /* Debug */,
+				45E507342B40BA2100B79F60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45E507062B40BA1C00B79F60 /* Project object */;
+}
