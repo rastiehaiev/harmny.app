@@ -10,12 +10,14 @@ import GoogleSignIn
 
 @main
 struct harmny_appApp: App {
-    @StateObject var authViewModel = AuthenticationViewModel()
+    @StateObject private var authViewModel = AuthenticationViewModel()
+    @StateObject private var connectivityProvider = WatchConnectivityProvider.shared
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(authViewModel)
+                .environmentObject(connectivityProvider)
                 .onAppear {
                     GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
                         if let user = user {

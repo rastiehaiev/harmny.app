@@ -14,7 +14,19 @@
 		452003D62B40C18B00C10911 /* UserProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003D52B40C18B00C10911 /* UserProfileImageView.swift */; };
 		452003D82B40C20700C10911 /* UserProfileImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003D72B40C20700C10911 /* UserProfileImageLoader.swift */; };
 		452003E42B42183100C10911 /* UIApplicationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003E32B42183100C10911 /* UIApplicationExt.swift */; };
-		452003E92B4302F600C10911 /* ApiTokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003E82B4302F600C10911 /* ApiTokenData.swift */; };
+		452003EB2B44305600C10911 /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003EA2B44305600C10911 /* WatchConnectivityProvider.swift */; };
+		452003F02B44388800C10911 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003EF2B44388800C10911 /* Activity.swift */; };
+		452003F32B443A3A00C10911 /* ActivitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003F22B443A3A00C10911 /* ActivitiesViewModel.swift */; };
+		452003F52B443AAB00C10911 /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003F42B443AAB00C10911 /* ActivitiesView.swift */; };
+		452003F72B443D9C00C10911 /* WatchConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003F62B443D9C00C10911 /* WatchConnectivityProvider.swift */; };
+		452003F92B443E8F00C10911 /* TokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003F82B443E8F00C10911 /* TokenData.swift */; };
+		452003FA2B443E8F00C10911 /* TokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003F82B443E8F00C10911 /* TokenData.swift */; };
+		452003FC2B45728400C10911 /* JwtTokenParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003FB2B45728400C10911 /* JwtTokenParser.swift */; };
+		452003FF2B457D8000C10911 /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452003FE2B457D8000C10911 /* TokenService.swift */; };
+		452004012B457DC400C10911 /* ApiToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452004002B457DC400C10911 /* ApiToken.swift */; };
+		452004032B45813B00C10911 /* HarmonyActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452004022B45813B00C10911 /* HarmonyActivityService.swift */; };
+		452004052B45849800C10911 /* HarmonyUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452004042B45849800C10911 /* HarmonyUserService.swift */; };
+		4562ADE62B4DB68E0011BC22 /* NumberPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4562ADE52B4DB68E0011BC22 /* NumberPickerView.swift */; };
 		45E507122B40BA1C00B79F60 /* harmny_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E507112B40BA1C00B79F60 /* harmny_appApp.swift */; };
 		45E507142B40BA1C00B79F60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E507132B40BA1C00B79F60 /* ContentView.swift */; };
 		45E507162B40BA1F00B79F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E507152B40BA1F00B79F60 /* Assets.xcassets */; };
@@ -24,6 +36,14 @@
 		45E507262B40BA1F00B79F60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E507252B40BA1F00B79F60 /* ContentView.swift */; };
 		45E507282B40BA2100B79F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E507272B40BA2100B79F60 /* Assets.xcassets */; };
 		45E5072B2B40BA2100B79F60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E5072A2B40BA2100B79F60 /* Preview Assets.xcassets */; };
+		45EA5A502B46F7E4002A177B /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA5A4F2B46F7E4002A177B /* ActivityView.swift */; };
+		45EA5A522B46F8F8002A177B /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA5A512B46F8F8002A177B /* ActivityViewModel.swift */; };
+		45EA5A562B47246A002A177B /* ActivityDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA5A552B47246A002A177B /* ActivityDetails.swift */; };
+		45EA5A5D2B4822A6002A177B /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA5A5C2B4822A6002A177B /* DateUtils.swift */; };
+		45EA5A5F2B4876B5002A177B /* TimerValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA5A5E2B4876B5002A177B /* TimerValue.swift */; };
+		45EA5A612B48886A002A177B /* ActivityStopwatchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA5A602B48886A002A177B /* ActivityStopwatchInfo.swift */; };
+		45EA5A642B4A0819002A177B /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA5A632B4A0819002A177B /* CircleButtonView.swift */; };
+		45EA5A662B4B3578002A177B /* ActivityObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EA5A652B4B3578002A177B /* ActivityObservable.swift */; };
 		49FA430788F41897E2CC5302 /* Pods_harmny_app_Watch_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8881C291CBBEA42E08A9F9E1 /* Pods_harmny_app_Watch_App.framework */; };
 		DEB99F52D1766438CA00F61E /* Pods_harmny_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1286871AA2AC3606960152CC /* Pods_harmny_app.framework */; };
 /* End PBXBuildFile section */
@@ -62,7 +82,18 @@
 		452003D52B40C18B00C10911 /* UserProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileImageView.swift; sourceTree = "<group>"; };
 		452003D72B40C20700C10911 /* UserProfileImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileImageLoader.swift; sourceTree = "<group>"; };
 		452003E32B42183100C10911 /* UIApplicationExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExt.swift; sourceTree = "<group>"; };
-		452003E82B4302F600C10911 /* ApiTokenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTokenData.swift; sourceTree = "<group>"; };
+		452003EA2B44305600C10911 /* WatchConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityProvider.swift; sourceTree = "<group>"; };
+		452003EF2B44388800C10911 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		452003F22B443A3A00C10911 /* ActivitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewModel.swift; sourceTree = "<group>"; };
+		452003F42B443AAB00C10911 /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
+		452003F62B443D9C00C10911 /* WatchConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityProvider.swift; sourceTree = "<group>"; };
+		452003F82B443E8F00C10911 /* TokenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenData.swift; sourceTree = "<group>"; };
+		452003FB2B45728400C10911 /* JwtTokenParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JwtTokenParser.swift; sourceTree = "<group>"; };
+		452003FE2B457D8000C10911 /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		452004002B457DC400C10911 /* ApiToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiToken.swift; sourceTree = "<group>"; };
+		452004022B45813B00C10911 /* HarmonyActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonyActivityService.swift; sourceTree = "<group>"; };
+		452004042B45849800C10911 /* HarmonyUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonyUserService.swift; sourceTree = "<group>"; };
+		4562ADE52B4DB68E0011BC22 /* NumberPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPickerView.swift; sourceTree = "<group>"; };
 		45E5070E2B40BA1C00B79F60 /* harmny.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = harmny.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E507112B40BA1C00B79F60 /* harmny_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = harmny_appApp.swift; sourceTree = "<group>"; };
 		45E507132B40BA1C00B79F60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +104,14 @@
 		45E507252B40BA1F00B79F60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45E507272B40BA2100B79F60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E5072A2B40BA2100B79F60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45EA5A4F2B46F7E4002A177B /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		45EA5A512B46F8F8002A177B /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		45EA5A552B47246A002A177B /* ActivityDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetails.swift; sourceTree = "<group>"; };
+		45EA5A5C2B4822A6002A177B /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		45EA5A5E2B4876B5002A177B /* TimerValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerValue.swift; sourceTree = "<group>"; };
+		45EA5A602B48886A002A177B /* ActivityStopwatchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStopwatchInfo.swift; sourceTree = "<group>"; };
+		45EA5A632B4A0819002A177B /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		45EA5A652B4B3578002A177B /* ActivityObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityObservable.swift; sourceTree = "<group>"; };
 		4D97AB8DC16E1AA4B0DA8771 /* Pods-harmny.app Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-harmny.app Watch App.debug.xcconfig"; path = "Target Support Files/Pods-harmny.app Watch App/Pods-harmny.app Watch App.debug.xcconfig"; sourceTree = "<group>"; };
 		720A410131F102A78D2C0A7F /* Pods-harmny.app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-harmny.app.release.xcconfig"; path = "Target Support Files/Pods-harmny.app/Pods-harmny.app.release.xcconfig"; sourceTree = "<group>"; };
 		8881C291CBBEA42E08A9F9E1 /* Pods_harmny_app_Watch_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_harmny_app_Watch_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +165,7 @@
 			children = (
 				452003CD2B40BFCD00C10911 /* GoogleSignInAuthenticator.swift */,
 				452003D72B40C20700C10911 /* UserProfileImageLoader.swift */,
+				452003EA2B44305600C10911 /* WatchConnectivityProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -141,7 +181,7 @@
 		452003DB2B40C3C800C10911 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				452003E82B4302F600C10911 /* ApiTokenData.swift */,
+				452003F82B443E8F00C10911 /* TokenData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -152,6 +192,49 @@
 				452003E32B42183100C10911 /* UIApplicationExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		452003EC2B44386A00C10911 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45E507252B40BA1F00B79F60 /* ContentView.swift */,
+				452003F42B443AAB00C10911 /* ActivitiesView.swift */,
+				45EA5A4F2B46F7E4002A177B /* ActivityView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		452003ED2B44387000C10911 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				452004002B457DC400C10911 /* ApiToken.swift */,
+				452003EF2B44388800C10911 /* Activity.swift */,
+				45EA5A552B47246A002A177B /* ActivityDetails.swift */,
+				45EA5A602B48886A002A177B /* ActivityStopwatchInfo.swift */,
+				45EA5A652B4B3578002A177B /* ActivityObservable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		452003EE2B44387B00C10911 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				452003FE2B457D8000C10911 /* TokenService.swift */,
+				452003F62B443D9C00C10911 /* WatchConnectivityProvider.swift */,
+				452003FB2B45728400C10911 /* JwtTokenParser.swift */,
+				452004022B45813B00C10911 /* HarmonyActivityService.swift */,
+				452004042B45849800C10911 /* HarmonyUserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		452003F12B443A2A00C10911 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				452003F22B443A3A00C10911 /* ActivitiesViewModel.swift */,
+				45EA5A512B46F8F8002A177B /* ActivityViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		45E507052B40BA1C00B79F60 = {
@@ -200,8 +283,13 @@
 		45E507222B40BA1F00B79F60 /* harmny.app Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				45EA5A622B4A0804002A177B /* Components */,
+				452003ED2B44387000C10911 /* Models */,
+				452003EE2B44387B00C10911 /* Services */,
+				452003EC2B44386A00C10911 /* Views */,
+				452003F12B443A2A00C10911 /* ViewModels */,
+				45EA5A5B2B482294002A177B /* Utils */,
 				45E507232B40BA1F00B79F60 /* harmny_appApp.swift */,
-				45E507252B40BA1F00B79F60 /* ContentView.swift */,
 				45E507272B40BA2100B79F60 /* Assets.xcassets */,
 				45E507292B40BA2100B79F60 /* Preview Content */,
 			);
@@ -214,6 +302,24 @@
 				45E5072A2B40BA2100B79F60 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45EA5A5B2B482294002A177B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				45EA5A5C2B4822A6002A177B /* DateUtils.swift */,
+				45EA5A5E2B4876B5002A177B /* TimerValue.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		45EA5A622B4A0804002A177B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				45EA5A632B4A0819002A177B /* CircleButtonView.swift */,
+				4562ADE52B4DB68E0011BC22 /* NumberPickerView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		C9F26B32A4F63EDC6047F55A /* Frameworks */ = {
@@ -395,11 +501,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				452003D62B40C18B00C10911 /* UserProfileImageView.swift in Sources */,
+				452003EB2B44305600C10911 /* WatchConnectivityProvider.swift in Sources */,
 				452003D82B40C20700C10911 /* UserProfileImageLoader.swift in Sources */,
 				452003D02B40C00100C10911 /* AuthenticationViewModel.swift in Sources */,
 				452003E42B42183100C10911 /* UIApplicationExt.swift in Sources */,
+				452003F92B443E8F00C10911 /* TokenData.swift in Sources */,
 				452003D42B40C14C00C10911 /* UserProfileView.swift in Sources */,
-				452003E92B4302F600C10911 /* ApiTokenData.swift in Sources */,
 				45E507142B40BA1C00B79F60 /* ContentView.swift in Sources */,
 				452003CE2B40BFCD00C10911 /* GoogleSignInAuthenticator.swift in Sources */,
 				45E507122B40BA1C00B79F60 /* harmny_appApp.swift in Sources */,
@@ -411,8 +518,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EA5A612B48886A002A177B /* ActivityStopwatchInfo.swift in Sources */,
+				452003F32B443A3A00C10911 /* ActivitiesViewModel.swift in Sources */,
+				452003F02B44388800C10911 /* Activity.swift in Sources */,
+				45EA5A662B4B3578002A177B /* ActivityObservable.swift in Sources */,
+				45EA5A502B46F7E4002A177B /* ActivityView.swift in Sources */,
+				45EA5A562B47246A002A177B /* ActivityDetails.swift in Sources */,
+				452003FC2B45728400C10911 /* JwtTokenParser.swift in Sources */,
+				4562ADE62B4DB68E0011BC22 /* NumberPickerView.swift in Sources */,
 				45E507262B40BA1F00B79F60 /* ContentView.swift in Sources */,
+				452004012B457DC400C10911 /* ApiToken.swift in Sources */,
+				452004032B45813B00C10911 /* HarmonyActivityService.swift in Sources */,
 				45E507242B40BA1F00B79F60 /* harmny_appApp.swift in Sources */,
+				452003FA2B443E8F00C10911 /* TokenData.swift in Sources */,
+				45EA5A522B46F8F8002A177B /* ActivityViewModel.swift in Sources */,
+				45EA5A5D2B4822A6002A177B /* DateUtils.swift in Sources */,
+				452003F52B443AAB00C10911 /* ActivitiesView.swift in Sources */,
+				45EA5A5F2B4876B5002A177B /* TimerValue.swift in Sources */,
+				452004052B45849800C10911 /* HarmonyUserService.swift in Sources */,
+				452003FF2B457D8000C10911 /* TokenService.swift in Sources */,
+				45EA5A642B4A0819002A177B /* CircleButtonView.swift in Sources */,
+				452003F72B443D9C00C10911 /* WatchConnectivityProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +606,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -555,7 +682,7 @@
 				DEVELOPMENT_TEAM = M8Z87BMBG9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = harmny.app;
+				INFOPLIST_KEY_CFBundleDisplayName = Harmony;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "harmny.io.harmny-app";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -586,7 +713,7 @@
 				DEVELOPMENT_TEAM = M8Z87BMBG9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = harmny.app;
+				INFOPLIST_KEY_CFBundleDisplayName = Harmony;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "harmny.io.harmny-app";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -613,14 +740,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"harmny.app/Preview Content\"";
 				DEVELOPMENT_TEAM = M8Z87BMBG9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "harmny-app-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = harmny.app;
+				INFOPLIST_FILE = harmny.app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Harmony;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -634,6 +762,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "harmny.io.harmny-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -651,14 +780,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"harmny.app/Preview Content\"";
 				DEVELOPMENT_TEAM = M8Z87BMBG9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "harmny-app-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = harmny.app;
+				INFOPLIST_FILE = harmny.app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Harmony;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -672,6 +802,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "harmny.io.harmny-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

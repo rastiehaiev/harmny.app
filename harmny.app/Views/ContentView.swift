@@ -16,17 +16,24 @@ struct ContentView: View {
             switch authViewModel.state {
             case .signedIn:
                 UserProfileView()
+                    .navigationTitle(
+                        NSLocalizedString(
+                            "Account",
+                            comment: "Account title"
+                        )
+                    )
             case .signedOut:
                 SignInView()
-//                    .navigationTitle(
-//                        NSLocalizedString(
-//                            "Sign-in",
-//                            comment: "Sign-in navigation title"
-//                        ))
+                    .navigationTitle(
+                        NSLocalizedString(
+                            "Sign-in",
+                            comment: "Sign-in navigation title"
+                        )
+                    )
             case .intermediate(let mode):
                 Text(mode.rawValue)
             }
         }
-        //.navigationViewStyle(StackNavigationViewStyle())
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }

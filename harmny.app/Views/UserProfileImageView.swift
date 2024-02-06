@@ -19,7 +19,7 @@ struct UserProfileImageView: View {
         Image(uiImage: userProfileImageLoader.image)
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(width: 45, height: 45, alignment: .center)
+            .frame(width: 45, height: 45)
             .scaledToFit()
             .clipShape(Circle())
             .accessibilityLabel(Text("User profile image."))

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct harmny_app_Watch_AppApp: App {
+    @StateObject var activitiesViewModel = ActivitiesViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(activitiesViewModel)
         }
     }
 }

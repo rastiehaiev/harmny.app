@@ -14,10 +14,10 @@ final class GoogleSignInAuthenticator: ObservableObject {
     /// Signs in the user based upon the selected account.'
     /// - note: Successful calls to this will set the `authViewModel`'s `state` property.
     func signIn(googleUser: GIDGoogleUser?, completion: @escaping (Result<AuthenticationViewModel.State, Error>) -> Void) {
-        let handleUserAndTokenDataResult: (GIDGoogleUser, Result<ApiTokenData, Error>) -> Void = { user, result in
+        let handleUserAndTokenDataResult: (GIDGoogleUser, Result<TokenData, Error>) -> Void = { user, result in
             switch result {
             case .success(let tokenData):
-                let state = AuthenticationViewModel.State.signedIn(googleUser: user, apiTokenData: tokenData)
+                let state = AuthenticationViewModel.State.signedIn(googleUser: user, tokenData: tokenData)
                 completion(.success(state))
             case .failure(let error):
                 completion(.failure(error))
@@ -72,7 +72,7 @@ final class GoogleSignInAuthenticator: ObservableObject {
         }
     }
     
-    private func exchangeIdTokenToApiAccessToken(idToken: String, completion: @escaping (Result<ApiTokenData, Error>) -> Void) {
+    private func exchangeIdTokenToApiAccessToken(idToken: String, completion: @escaping (Result<TokenData, Error>) -> Void) {
         guard let url = URL(string: "https://api.harmny.io/auth/ios") else {
             completion(.failure(URLError(.badURL)))
             return
@@ -115,7 +115,7 @@ final class GoogleSignInAuthenticator: ObservableObject {
                 }
                 
                 do {
-                    let apiTokenData = try JSONDecoder().decode(ApiTokenData.self, from: data)
+                    let apiTokenData = try JSONDecoder().decode(TokenData.self, from: data)
                     completion(.success(apiTokenData))
                 } catch {
                     completion(.failure(URLError(.badServerResponse)))
