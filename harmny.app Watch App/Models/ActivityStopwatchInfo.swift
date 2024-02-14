@@ -18,15 +18,22 @@ struct ActivityStopwatchInfo {
         self.elapsedTimeSec = elapsedTimeSec
     }
     
-    static func from(_ repetition: ActivityRepetition?) -> ActivityStopwatchInfo {
+    static func getStatus(_ repetition: ActivityRepetition?) -> Status {
         if (repetition == nil || repetition!.completed == true) {
-            return ActivityStopwatchInfo(.unstarted, 0, 0)
+            return .unstarted
         }
         
-        let status: ActivityStopwatchInfo.Status = if (repetition!.started == true) {
+        return if (repetition!.started == true) {
             .started
         } else {
             .paused
+        }
+    }
+    
+    static func from(_ repetition: ActivityRepetition?) -> ActivityStopwatchInfo {
+        let status = getStatus(repetition)
+        if (status == .unstarted) {
+            return ActivityStopwatchInfo(.unstarted, 0, 0)
         }
         
         var elapsedTimeMs = repetition!.timeSpentMs ?? 0
@@ -46,7 +53,7 @@ struct ActivityStopwatchInfo {
 }
 
 extension ActivityStopwatchInfo {
-    enum Status {
+enum Status {
         case unstarted
         case started
         case paused

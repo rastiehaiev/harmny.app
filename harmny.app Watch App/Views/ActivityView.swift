@@ -17,6 +17,7 @@ struct ActivityView: View {
     @State private var timerValue: TimerValue = TimerValue.from(0)
     
     @State private var selectedNumber: Int = 0
+    @Environment(\.scenePhase) private var scenePhase
     
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -38,19 +39,25 @@ struct ActivityView: View {
             case .failedToLoad:
                 // this will trigger whole view reload
                 Text("Failed to load activity")
-            case .loaded(let model):
+            case .loaded(let repetition):
+                let stopwatchInfo = ActivityStopwatchInfo.from(repetition)
                 VStack {
                     VStack {
                         Spacer()
                         Text(stopwatchValue)
-                            .animation(.easeInOut(duration: 0.2), value: getTimerTextSize(model)    )
-                            .font(Font.custom("Menlo-Regular", size: getTimerTextSize(model)))
+                            .animation(.easeInOut(duration: 0.2), value: getTimerTextSize(stopwatchInfo))
+                            .font(Font.custom("Menlo-Regular", size: getTimerTextSize(stopwatchInfo)))
                             .onReceive(timer) { _ in
-                                if self.isTimerRunning {
+                                if self.isTimerRunning && !self.buttonsDisabled {
                                     self.stopwatchValue = self.timerValue.incrementAndGet()
                                 }
                             }
-                        if (model.status == .paused) {
+                            .onChange(of: scenePhase) { prev, cur in
+                                if (prev == .background && cur == .inactive) {
+                                    self.updateTimer(stopwatchInfo)
+                                }
+                            }
+                        if (stopwatchInfo.status == .paused) {
                             NumberPickerView(selectedNumber: $selectedNumber)
                         } else if (selectedNumber > 0) {
                             Text("Count: \(selectedNumber)")
@@ -59,17 +66,17 @@ struct ActivityView: View {
                         Spacer()
                     }
                     HStack {
-                        if (model.status == .unstarted) {
+                        if (stopwatchInfo.status == .unstarted) {
                             Spacer()
                         } else {
                             CircleButtonView(color: .red, imageName: "trash.circle.fill", delete).disabled(buttonsDisabled)
                             Spacer()
                         }
-                        if (model.status == .paused) {
+                        if (stopwatchInfo.status == .paused) {
                             CircleButtonView(color: .blue, imageName: "checkmark.circle.fill", complete).disabled(buttonsDisabled)
                             Spacer()
                         }
-                        if (model.status == .started) {
+                        if (stopwatchInfo.status == .started) {
                             CircleButtonView(color: .orange, imageName: "pause.circle.fill", pause).disabled(buttonsDisabled)
                         } else {
                             CircleButtonView(color: .green, imageName: "play.circle.fill", play).disabled(buttonsDisabled)
@@ -84,9 +91,9 @@ struct ActivityView: View {
                 fallthrough
             case .failedToLoad:
                 activitiesViewModel.initialise()
-            case .loaded(let info):
+            case .loaded(let repetition):
                 enableButtons()
-                updateTimer(info)
+                updateTimer(ActivityStopwatchInfo.from(repetition))
             default:
                 break
             }

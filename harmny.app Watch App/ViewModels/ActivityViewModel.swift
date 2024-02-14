@@ -143,7 +143,7 @@ class ActivityViewModel: ObservableObject {
     }
     
     private func updateStateFromRepetition(_ activityRepetition: ActivityRepetition?) {
-        self.updateState(.loaded(ActivityStopwatchInfo.from(activityRepetition)))
+        self.updateState(.loaded(activityRepetition))
     }
     
     private func updateState(_ state: ActivityViewModel.State) {
@@ -167,7 +167,7 @@ extension ActivityViewModel {
         
         case loading
         case failedToLoad
-        case loaded(ActivityStopwatchInfo)
+        case loaded(ActivityRepetition?)
         case unauthenticated
     }
 }
